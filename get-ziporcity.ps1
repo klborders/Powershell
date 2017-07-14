@@ -13,7 +13,7 @@ Step 3)
 Profit.
 #>
 
-function Get-ZipOrCity {
+Function Get-ZipOrCity {
    Param ($ZiporCity)
 
   $DataItems = @{
@@ -24,8 +24,8 @@ function Get-ZipOrCity {
   }
 
   $Target_Value = @()
-  foreach ($Item in $DataItems.GetEnumerator()) {
-    if ($ZiporCity -eq $Item.Name) {
+  ForEach ($Item in $DataItems.GetEnumerator()) {
+    If ($ZiporCity -eq $Item.Name) {
       $Target_Value += [String]$Item.Value
     }
     ElseIf ($ZiporCity -eq $Item.Value) {
@@ -35,7 +35,7 @@ function Get-ZipOrCity {
       Continue
     }
   }
-  If ($target_value.Count -gt 0) {
+  If ($Target_Value.Count -gt 0) {
     Write-Host $Target_Value -ForegroundColor Green
   }
   Else {
