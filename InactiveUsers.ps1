@@ -105,7 +105,7 @@ limitations under the License.
     - Exports will be removed every 30 days
 .NOTES
   Version:        1.0
-  Author:         Kamber Borders
+  Author:         Kamber Borders (https://github.com/klborders)
   Creation Date:  3/6/2019
   Purpose/Change: Initial OpenSource Deployment
 .EXAMPLE
